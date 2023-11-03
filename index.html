@@ -13,24 +13,243 @@
         ><img src="./assets/img/nav/logo.png" alt="logo" class="logo"
       /></a>
       <nav class="navbar">
-        <ul class="navbar">
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Beneficios</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contacto</a></li>
+        <ul class="navbar_ul">
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#beneficios_section">Beneficios</a></li>
+          <li><a href="#products_section">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
         <img src="./assets/img/nav/bx-cart.svg" alt="carro" />
+        <a href="./assets/page/login.html" class="navbar_iniciosesion"
+          >iniciar sesion</a
+        >
       </nav>
     </header>
     <main>
-      <div class="conteiner">
-        <div>
-          <h1><span>Cassiopeia</span> te viste</h1>
-          <p>
-            Somos una Marca minorista con varias sucursales al rededor del pais
+      <section id="conteiner_hero">
+        <div class="conteiner_info">
+          <h1 class="conteiner_info_titulo">
+            <span>Cassiopeia</span> te viste
+          </h1>
+          <p class="conteiner_info_text">
+            Descubre nuestra adorable colección de ropa para bebés. Desde suaves
+            bodys hasta encantadores conjuntos, tenemos todo lo que tu pequeño
+            necesita para estar cómodo y a la moda. ¡Viste a tu bebé con amor!
+            Compra ahora y crea recuerdos inolvidables.
+          </p>
+          <a href="#" class="navbar_iniciosesion">Ver mas</a>
+        </div>
+        <img
+          src="./assets/img/hero/hero-body.jpeg"
+          alt="body hero"
+          class="conteiner_hero_img"
+        />
+      </section>
+      <section id="about">
+        <p class="about_text">
+          Somos una empresa nacida en 2001 con 22 años de experiencia en el
+          rúburo de la indumentaria infantil para bebés y niños.
+          <span class="about_span"
+            >Con diseños propios, costura calificada y lo mejor para vestir a tu
+            hijo.</span
+          >
+        </p>
+      </section>
+      <section id="beneficios_section">
+        <div class="beneficios-info">
+          <h2 class="beneficios_info_tittle">Nuestros Beneficios</h2>
+          <p class="beneficios_info_text">
+            Al comprar nuestros productos cuentan con los siguientes beneficios:
           </p>
         </div>
-      </div>
+        <div class="beneficios-conteiner">
+          <div class="beneficio">
+            <img
+              src="./assets/img/beneficios/svg-atencion.svg"
+              alt="svg-atencion"
+            />
+            <h3>Atención Personalizada</h3>
+            <p>
+              Expertos disponibles para ayudarte, asegurando una experiencia de
+              compra única y satisfactoria
+            </p>
+          </div>
+          <div class="beneficio">
+            <img
+              src="./assets/img/beneficios/svg-calidad-producto.svg"
+              alt="svg-calidad-producto"
+            />
+            <h3>Calidad excepcional</h3>
+            <p>
+              Prendas duraderas, suaves y seguras para una experiencia de uso
+              confiable y satisfactoria.
+            </p>
+          </div>
+          <div class="beneficio">
+            <img src="./assets/img/beneficios/svg-envio.svg" alt="svg-envio" />
+            <h3>Envío rápido y seguro</h3>
+            <p>
+              Tus productos llegan puntualmente, sin problemas, brindando
+              comodidad y confianza a cada cliente.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="products_section">
+        <h2 class="products_tittle">Agunos de nuestros productos:</h2>
+        <div class="products_conteiner">
+          <div class="products">
+            <img
+              class="products_img"
+              src="./assets/img/productos/bermuda_estampado.jpeg"
+              alt="bermuda_estampado"
+            />
+            <div class="products_top">
+              <p>$4300</p>
+              <p>En stock</p>
+            </div>
+            <p class="products_mid">Bermuda corte chino estampado</p>
+            <div class="products_bot">
+              <img src="./assets/img/nav/bx-cart.svg" alt="bx-cart" />
+              <a href="#">Añadir al carrito</a>
+            </div>
+          </div>
+          <div class="products">
+            <img
+              class="products_img"
+              src="./assets/img/productos/chomba_de_bb.jpeg"
+              alt="chomba_de_bb"
+            />
+            <div class="products_top">
+              <p>$4300</p>
+              <p>En stock</p>
+            </div>
+            <p class="products_mid">Chomba de bebe</p>
+            <div class="products_bot">
+              <img src="./assets/img/nav/bx-cart.svg" alt="bx-cart" />
+              <a href="#">Añadir al carrito</a>
+            </div>
+          </div>
+          <div class="products">
+            <img
+              class="products_img"
+              src="./assets/img/productos/jogger_de_bb.jpeg"
+              alt="jogger_de_bb"
+            />
+            <div class="products_top">
+              <p>$4300</p>
+              <p>En stock</p>
+            </div>
+            <p class="products_mid">Jogger de bebe</p>
+            <div class="products_bot">
+              <img src="./assets/img/nav/bx-cart.svg" alt="bx-cart" />
+              <a href="#">Añadir al carrito</a>
+            </div>
+          </div>
+          <div class="products">
+            <img
+              class="products_img"
+              src="./assets/img/hero/hero-body.jpeg"
+              alt="bermuda_corte chino"
+            />
+            <div class="products_top">
+              <p>$4300</p>
+              <p>En stock</p>
+            </div>
+            <p class="products_mid">body chomba de bebe</p>
+            <div class="products_bot">
+              <img src="./assets/img/nav/bx-cart.svg" alt="bx-cart" />
+              <a href="#">Añadir al carrito</a>
+            </div>
+          </div>
+          <div class="products_ver_mas">
+            <a href="#" class="ver_mas"
+              >Ver Mas
+              <img src="./assets/img/productos/signo_mas.svg" alt="signo_mas"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section id="contacto">
+        <div class="contact_conteiner">
+          <h2>Contactanos</h2>
+          <div class="cards_contacto">
+            <div class="card_contactanos">
+              <p>Araceli, Ayzacayo</p>
+              <div class="contacto_alineacion">
+                <img
+                  src="./assets/img/contacto/contacto_ubicacion.svg"
+                  alt="contacto_ubicacion"
+                />
+                <span>Calle Falsa 123</span>
+              </div>
+              <div class="contacto_alineacion">
+                <img
+                  src="./assets/img/contacto/contacto_meil.svg"
+                  alt="contacto_meil"
+                />
+                <span>mail@gmail.com</span>
+              </div>
+              <div class="contacto_alineacion">
+                <img
+                  src="./assets/img/contacto/contacto_telefono.svg"
+                  alt="contacto_telefono"
+                />
+                <span>011 11 2233-4455</span>
+              </div>
+            </div>
+            <div class="cards_contacto">
+              <div class="card_contactanos">
+                <p>Judith, Ayzacayo</p>
+                <div class="contacto_alineacion">
+                  <img
+                    src="./assets/img/contacto/contacto_ubicacion.svg"
+                    alt="contacto_ubicacion"
+                  />
+                  <span>Calle Falsa 123</span>
+                </div>
+                <div class="contacto_alineacion">
+                  <img
+                    src="./assets/img/contacto/contacto_meil.svg"
+                    alt="contacto_meil"
+                  />
+                  <span>mail@gmail.com</span>
+                </div>
+                <div class="contacto_alineacion">
+                  <img
+                    src="./assets/img/contacto/contacto_telefono.svg"
+                    alt="contacto_telefono"
+                  />
+                  <span>011 11 2233-4455</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="redes_sociales">
+            <a href="https://twitter.com" target="_blank"
+              ><img
+                src="./assets/img/contacto/contacto_twitter.svg"
+                alt="twitter"
+            /></a>
+            <a href="https://instagram.com" target="_blank"
+              ><img
+                src="./assets/img/contacto/contacto_instagram.svg"
+                alt="instagram"
+            /></a>
+            <a href="https://facebook.com"
+              ><img
+                src="./assets/img/contacto/contacto_facebook.svg"
+                alt="facebook"
+            /></a>
+          </div>
+        </div>
+        <img
+          class="paseo_bogota"
+          src="./assets/img/contacto/local-contacto.png"
+          alt="local-contacto"
+        />
+      </section>
     </main>
+    <footer><h3>Cassiopeia</h3></footer>
   </body>
 </html>
