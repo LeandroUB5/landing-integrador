@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,200&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   text-decoration: none;
   list-style-type: none;
   color: black;
+  font-family: "Poppins";
 }
 body {
   display: flex;
@@ -12,7 +14,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  background: rgb(122, 181, 64);
+  background: #001f3f;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<Header>>>>>>>>>>>>>>>>>>>> */
@@ -23,17 +25,17 @@ header {
   justify-content: space-between;
   background: linear-gradient(
     0deg,
-    rgb(122, 181, 64) 36%,
-    rgba(59, 92, 26, 1) 98%
+    rgba(0, 31, 63, 1) 36%,
+    rgba(1, 9, 18, 1) 93%
   );
   width: 100%;
   height: 85px;
 }
 .logo {
   width: 200px;
-  background-color: #f5f5dc;
+  background-color: #2649b3;
   border-radius: 100px;
-  border: solid rgb(75, 121, 29);
+  border: solid #243e8d;
 }
 .navbar {
   display: flex;
@@ -44,10 +46,20 @@ header {
   display: flex;
   gap: 3rem;
 }
-.navbar_iniciosesion {
-  background-color: white;
+.navbar_ul a {
+  background-color: #add8e6;
   padding: 0.5rem;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
+}
+.navbar_ul a:hover {
+  color: white;
+  background-color: #010d1a;
+}
+.carro {
+  width: 2rem;
+}
+.navbar_iniciosesion img {
+  width: 2rem;
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<Hero>>>>>>>>>>>>>>>>>>>> */
 main {
@@ -62,9 +74,10 @@ main {
   align-items: center;
   justify-content: center;
   max-width: 1000px;
-  background-color: rgb(58, 92, 24);
+  background-color: #2f8db3;
   padding: 2rem;
   border-radius: 1.5rem;
+  gap: 1.4rem;
 }
 .conteiner_info {
   display: flex;
@@ -73,9 +86,27 @@ main {
   gap: 2rem;
   width: 40%;
 }
+.conteiner_info_titulo {
+  font-style: italic;
+  font-size: 1.7rem;
+}
+.conteiner_info_titulo span {
+  font-size: 2.2rem;
+  color: #0e2e50;
+}
 .conteiner_hero_img {
   width: 60%;
   border-radius: 1rem;
+}
+.conteiner_info_text {
+  text-align: justify;
+  font-size: 1rem;
+}
+.btn {
+  background-color: #031a33;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  color: white;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<about>>>>>>>>>>>>>>>>>>>> */
@@ -84,7 +115,7 @@ main {
   text-align: center;
 }
 .about_text {
-  opacity: 0.5;
+  font-weight: 600;
   text-align: center;
 }
 .about_span {
@@ -95,7 +126,7 @@ main {
   width: 1000px;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 .beneficios-info {
   display: flex;
@@ -105,14 +136,19 @@ main {
   gap: 1rem;
 }
 .beneficios_info_tittle {
-  opacity: 0.7;
+  font-weight: 600;
+  opacity: 0.9;
+  font-size: 1.8rem;
+  border-bottom: solid #000000;
+}
+.beneficios_info_text {
+  font-size: 1.2rem;
+  opacity: 0.9;
 }
 .beneficios-conteiner {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*   flex-wrap: wrap;
- */
   gap: 1rem;
 }
 .beneficio {
@@ -122,14 +158,20 @@ main {
   justify-content: baseline;
   text-align: center;
   align-items: center;
-  background-color: #a88661;
-  height: 175px;
+  background-color: #2f8db3;
+  height: 250px;
   padding: 1rem;
   gap: 1rem;
   border-radius: 0.7rem;
 }
 .beneficio img {
   width: 40px;
+}
+.beneficio h3 {
+  font-size: 1.3rem;
+}
+.beneficio p {
+  font-size: 1rem;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<Productos>>>>>>>>>>>>>>>>>>>> */
@@ -140,6 +182,12 @@ main {
   align-items: center;
   gap: 2rem;
 }
+.products_tittle {
+  font-weight: 600;
+  opacity: 0.9;
+  font-size: 1.8rem;
+  border-bottom: solid #000000;
+}
 .products_conteiner {
   display: flex;
   max-width: 1000px;
@@ -149,14 +197,17 @@ main {
   justify-content: center;
 }
 .products {
-  max-width: 320px;
-  background-color: #a88661;
+  max-width: 280px;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 15px 5px;
   border-radius: 0.6rem;
-  gap: 0.7rem;
+  gap: 1rem;
+  box-shadow: 0px 0px 10px 2px rgba(47, 141, 179, 0.72);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(47, 141, 179, 0.72);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(47, 141, 179, 0.72);
 }
 .products_img {
   width: 250px;
@@ -167,39 +218,54 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 0px 1rem;
+  align-items: center;
+}
+.products_top span {
+  font-size: 1.5rem;
+}
+.products_top p {
+  color: green;
 }
 .products_mid {
   align-self: center;
+  font-size: 0.9rem;
+  text-decoration: underline;
 }
 .products_bot {
   display: flex;
   justify-content: center;
-  gap: 8rem;
+  gap: 6rem;
   padding: 0.4rem;
-  background-color: #f5f5dc;
+  background-color: #87ceeb;
   border-radius: 0.4rem;
 }
-.products_ver_mas {
-  align-self: center;
-  margin-left: 10rem;
-  width: 150px;
-  background-color: #f5f5dc;
-  border-radius: 4rem;
+.products_bot a {
+  font-size: 0.9rem;
 }
+
 .ver_mas {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
   padding: 5px;
+  font-weight: 600;
+  margin-left: 10rem;
+  width: 150px;
+  height: 150px;
+  background-color: #f5f5dc;
+  border-radius: 5rem;
+}
+.signo_mas {
+  width: 4rem;
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<Contacto>>>>>>>>>>>>>>>>>>>> */
 #contacto {
   display: flex;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
   width: 1000px;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 .paseo_bogota {
   width: 60%;
@@ -209,7 +275,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+  background-color: #2f8db3;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
 }
 .cards_contacto {
   display: flex;
@@ -254,8 +323,11 @@ footer h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 60vh;
   gap: 1rem;
+  background-color: #add8e6;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 .form_titulo {
   font-size: 2rem;
@@ -268,4 +340,9 @@ footer h3 {
 .btn_inicio_sesion {
   background-color: white;
   padding: 5px;
+}
+.sin_cuenta p a {
+  font-size: 1.3rem;
+  text-decoration: underline;
+  color: #061729;
 }
