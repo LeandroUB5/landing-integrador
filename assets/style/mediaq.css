@@ -1,0 +1,109 @@
+@media (max-width: 1001px) {
+  /* <<<<<<<<<<<<<<<<<<<<<<<Header>>>>>>>>>>>>>>>>>>>> */
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+  }
+  /* <<<<<<<<<<<<<<<<<<<<<<<hero>>>>>>>>>>>>>>>>>>>> */
+  #conteiner_hero {
+    flex-direction: column;
+    width: 700px;
+  }
+  .conteiner_info,
+  .conteiner_hero_img {
+    width: 80%;
+  }
+  /* <<<<<<<<<<<<<<<<<<<<<<<contacto>>>>>>>>>>>>>>>>>>>> */
+  #contacto {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+}
+@media (max-width: 945px) {
+  .beneficios-conteiner {
+    flex-direction: column;
+  }
+}
+@media (max-width: 849px) {
+  .navbar ul {
+    background-color: #001f3f;
+    width: 100%;
+    height: calc(70vh - 88px);
+    position: absolute;
+    top: 88px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    display: none;
+  }
+  .navbar i {
+    display: block;
+  }
+  #toggle-menu:checked ~ .navbar_ul {
+    display: flex;
+  }
+  header {
+    flex-direction: row;
+  }
+  #conteiner_hero {
+    width: 500px;
+  }
+  #beneficios_section {
+    width: 500px;
+  }
+  .beneficio {
+    width: 270px;
+  }
+  .products_conteiner {
+    flex-direction: column;
+  }
+  .products_ver_mas {
+    margin-left: -10rem;
+  }
+}
+@media (max-width: 607px) {
+  .paseo_bogota {
+    width: 50%;
+  }
+  #about {
+    width: 350px;
+  }
+  #beneficios_section {
+    width: 350px;
+    text-align: center;
+  }
+}
+@media (max-width: 552px) {
+  header {
+    flex-direction: column;
+  }
+  .navbar ul {
+    top: 170px;
+    height: calc(70vh - 190px);
+  }
+  .form {
+    width: 350px;
+  }
+  .form input {
+    width: auto;
+  }
+}
+@media (max-width: 504px) {
+  #conteiner_hero {
+    width: 360px;
+  }
+  .products_tittle {
+    width: 350px;
+    text-align: center;
+  }
+  .paseo_bogota {
+    width: 350px;
+  }
+  .contact_conteiner {
+    width: 350px;
+    font-size: 0.9rem;
+  }
+}

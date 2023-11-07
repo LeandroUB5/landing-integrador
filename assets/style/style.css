@@ -61,6 +61,13 @@ header {
 .navbar_iniciosesion img {
   width: 2rem;
 }
+.navbar i {
+  font-size: 35px;
+  display: none;
+}
+#toggle-menu {
+  display: none;
+}
 /* <<<<<<<<<<<<<<<<<<<<<<<Hero>>>>>>>>>>>>>>>>>>>> */
 main {
   display: flex;
@@ -186,7 +193,7 @@ main {
   font-weight: 600;
   opacity: 0.9;
   font-size: 1.8rem;
-  border-bottom: solid #000000;
+  text-decoration: underline;
 }
 .products_conteiner {
   display: flex;
@@ -238,6 +245,8 @@ main {
   padding: 0.4rem;
   background-color: #87ceeb;
   border-radius: 0.4rem;
+  border: 0;
+  cursor: pointer;
 }
 .products_bot a {
   font-size: 0.9rem;
